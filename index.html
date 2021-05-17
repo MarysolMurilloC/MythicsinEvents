@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!--bundle y popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!--para card slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Boleteria</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <header class="mb-3">
+            <h1>Mythicsin Events</h1>
+            <div class="row">
+                <nav class="navbar nav-top">
+                    <ul>
+                        <li><a href="#">FAMILIARES</a></li>
+                        <li><a href="#">CONCIERTOS</a></li>
+                        <li><a href="#">TALLERES</a></li>
+                        <li><a href="#">TEATRO</a></li>
+                        <li><a href="#">CULTURA</a></li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-search" type="submit">BUSCAR</button>
+                    </form>
+                </nav>
+            </div>
+            
+        </header>
+
+
+        <div class="mt-4">
+            <h2>EVENTO PRINCIPAL</h2>
+            <div class="bg-prin">
+            
+                <div class="row2">
+                    <p class="propo-prin">Ut non mi metus. Sed nec tempor mauris, venenatis molestie augue. Cras at ultrices risus, sit amet ultrices metus. Etiam at arcu egestas, 
+                        ullamcorper sapien a, dignissim mi. Nulla vitae tortor non metus sagittis elementum. Quisque venenatis magna ac est euismod, quis scelerisque 
+                        elit vestibulum. Nam gravida turpis non blandit lacinia. In nec nisi molestie, sollicitudin magna eget, aliquet enim. Sed fringilla congue 
+                        purus eget porttitor. Cras auctor porta rhoncus. Maecenas molestie eu orci in aliquam. Duis sit amet diam suscipit, iaculis dui vitae, consequat 
+                        odio. In sagittis gravida lectus vitae feugiat. Vestibulum quis diam ultricies arcu euismod iaculis eu eu diam.</p>
+                    <button type="button" class="btn btn btn-outline-danger">MAS INFORMACIÓN</button>
+                </div>
+            </div>
+        </div>
+        <!--fin evento principal-->
+
+        <!--inicio cartas-->
+     
+        <h2>EVENTOS DESTACADOS</h2>
+
+        <div class="container">
+        <card class="card-tam">
+            <img src="./img/dimash.jpg" class="car-img" alt="">
+            <h3 slot="header">Concierto Dimash</h3>
+            <p class="txt-car" slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card class="card-tam">
+            <img src="./img/calabaza.jpg" class="car-img" alt="">
+            <h3 slot="header">Taller Crochet Intermedio</h3>
+            <p class="txt-car" slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card class="card-tam">
+            <img src="./img/tea.jpg" class="car-img" alt="">
+            <h3 slot="header">Taller Ceremonia del Té</h3>
+            <p class="txt-car" slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card class="card-tam">
+            <img src="./img/yoga.jpg" class="car-img" alt="">
+            <h3 slot="header">Taller Yoga Principiante</h3>
+            <p class="txt-car" slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </card>
+        <card class="card-tam">
+            <img src="./img/artepb.jpg" class="car-img" alt="">
+            <h3 slot="header">Exposición de Arte</h3>
+            <p class="txt-car" slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </card>
+        </div>
+        <!--fin cards-->
+
+
+        <!--Carrousell otros eventos-->
+
+        <div class="container-fluid ps-3 pe-3 mar-caro">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="inam" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!--set1-->
+                            <div class="carousel-item active">
+                                 <div class="container">
+                                     <div class="row">
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/tea.jpg" class="car-img" alt="">
+                                                 <div class="card-body">
+                                                     <h4>Taller Ceremonia del Té</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/yoga.jpg" class="car-img" alt="yoga">
+                                                 <div class="card-body">
+                                                     <h4>Taller Yoga Principiante</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                     
+                                                 </div>
+                                                 
+                                             </div>
+                                             
+                                         </div>
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/artepb.jpg" class="car-img" alt="">
+                                                 <div class="card-body">
+                                                     <h4>Exposición de Arte</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                               <img src="./img/calabaza.jpg" class="car-img" alt="">
+                                                <div class="card-body">
+                                                    <h4>Taller Crochet Intermedio</h4>
+                                                    <p>Lugar</p>
+                                                    <p>Fecha y hora</p>
+                                                    <p>Categoría: categoría</p>
+                                                    <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                     </div>
+                                 </div>
+        
+                                
+                            </div>
+                            <!--set2-->
+                            <div class="carousel-item">
+                                 <div class="container">
+                                     <div class="row">
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/calabaza.jpg" class="car-img" alt="">
+                                                 <div class="card-body">
+                                                     <h4>Taller Crochet Intermedio</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/artepb.jpg" class="car-img" alt="">
+                                                 <div class="card-body">
+                                                     <h4>Exposición de Arte</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col-sm-6 col-lg-3">
+                                             <div class="card">
+                                                <img src="./img/dimash.jpg" class="car-img" alt="">
+                                                 <div class="card-body">
+                                                     <h4>Concierto Dimash</h4>
+                                                     <p>Lugar</p>
+                                                     <p>Fecha y hora</p>
+                                                     <p>Categoría: categoría</p>
+                                                     <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+
+                                         <div class="col-sm-6 col-lg-3">
+                                            <div class="card">
+                                               <img src="./img/tea.jpg" class="car-img" alt="">
+                                                <div class="card-body">
+                                                    <h4>Taller Ceremonia del Té</h4>
+                                                    <p>Lugar</p>
+                                                    <p>Fecha y hora</p>
+                                                    <p>Categoría: categoría</p>
+                                                    <button type="button" class="btn btn-warning">INFORMACIÓN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                     </div> 
+                                 </div>  
+                            </div>
+                            
+                        </div> <!--fin carousel inner-->
+
+                        <a href="#inam" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#inam" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--fin carousel-->
+
+
+        <footer>
+            <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="#2F2C51" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#1C9CAF" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#7B3591" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#5F5AA2" />
+            </g>
+            </svg>
+            </div>
+            <!--Waves end-->
+    
+    
+            <div class="bg-foot mt-0">
+                <p class="txt-der">©️ Mythicsin Events</p>
+            </div>
+        </footer>
+    </div><!--fin div general-->
+
+
+</body>
+</html>
