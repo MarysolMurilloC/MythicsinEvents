@@ -1,0 +1,396 @@
+@import 'media-queries';
+
+body{
+    background-color: #21202A ;
+}
+.container-fluid{
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+
+//nav
+h1{
+    text-align: center;
+    font-size: 4em;
+    color: #7192CB;
+    padding-top: 0.2em;
+    font-family: fantasy;
+    @include respond-to($phone){
+      font-size: 3em;
+    }
+    @include respond-to($tablet-landscape){
+      font-size: 5em;
+    }
+}
+li{
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+}
+a{
+    color: #9996C5;
+    text-decoration: none;
+    @include respond-to($tablet-landscape){
+      font-size: 1.7em;
+    }
+}
+.d-flex{
+    padding-right: 2em;
+    @include respond-to($phone){
+      padding-left: 2em;
+    }
+    @include respond-to($tablet-landscape){
+      padding-left: 2.5em;
+    }
+}
+.navbar{
+    border-bottom: 4px solid #6A6788;
+}
+.btn-search{
+    color: #9996C5;
+    border: 2px solid #9996C5;
+}
+.btn-search:hover {
+    color: #fff;
+    background-color: #9996C5;
+    border-color: #9996C5;
+}
+//evento principal
+
+.bg-prin{
+  background-image: url(../img/thumb/crochet-thumbnail.jpg);
+  height: 45em;
+  width: 75em;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+  margin-left: 17%;
+  @include respond-to($phone){
+    height: 62em;
+    width: 103%;
+    background-position-x: center;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-left: 0%;
+  }
+  @include respond-to($tablet-landscape){
+    height: 62em;
+    width: 101%;
+    background-position-x: center;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-left: 0%;
+  }
+}
+.propo-prin{
+    width: 80%;
+    margin-right: 2.5em;
+    color: black;
+    @include respond-to($phone){
+      width: 100%;
+      margin-right: 0em;
+      font-size: 15px;
+    }
+    @include respond-to($tablet-landscape){
+      width: 100%;
+      margin-right: 0em;
+      font-size: 1.4em;
+    }
+}
+.row2{
+    display: -webkit-box;
+    padding: 1em;
+    padding-bottom: 0em;
+    margin-top: 28.4em;
+    position: absolute;
+    width: 75em;
+    background-color: bisque;
+    @include respond-to($phone){
+      margin-top: 35em;
+      width: 103%;
+      display: grid;
+      padding-bottom: 1em;
+    }
+    @include respond-to($tablet-landscape){
+      margin-top: 35em;
+      width: 101%;
+      display: grid;
+      padding-bottom: 1em;
+    }
+}
+.btn-outline-danger {
+    margin-top: 3em;
+    @include respond-to($phone){
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+}
+h2{
+    font-size: 3em;
+    text-align: center;
+    color: #E7E2E6;
+    font-weight: 700;
+    @include respond-to($phone){
+      font-size: 2em;
+    }
+}
+p{
+  color: #fff;
+}
+
+
+//cartas
+
+h3{
+    color: white;
+}
+.car-img{
+    height: 20em;
+}
+.txt-car{
+    color: white;
+}
+.card-tam{
+  width: 229px;
+  height: 432px;
+  margin: 3em;
+  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+//carousel
+.card {
+  min-width: 0;
+  background-color: #557CC0;
+  background-clip: border-box;
+  border: 0px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  width: 88%;
+  height: 38em;
+  margin: 1em;
+  @include respond-to($tablet-landscape){
+    margin: 2em;
+    margin-left: 1em;
+  }
+}
+h4{
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+.mar-caro{
+  margin-top: 15em;
+  @include respond-to($tablet-landscape){
+    margin-top: 8em;
+  }
+}
+
+
+//olas
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+//footer
+.txt-der{
+  color: #fff;
+  text-align: center;
+  padding: 0.8em 0em;
+  margin: 0;
+}
+.bg-foot{
+  background-color: #5F5AA2;
+}
+footer{
+  margin-top: 10em;
+  @include respond-to($phone){
+    margin-top: 6em;
+  }
+  @include respond-to($tablet-landscape){
+    width: 101%;
+  }
+}
+
+
+//Página de detalle //
+
+.bg-det{
+  background-image: url(../img/thumb/crochet.jpg);
+  background-repeat: no-repeat;
+  height: 57em;
+  @include respond-to($phone){
+    background-position-x: -72em;
+  }
+  @include respond-to($tablet-landscape){
+    background-position-x: -58em;
+  }
+}
+.det-img{
+  width: 20em;
+  left: 1.5em;
+  top: 26em;
+  position: relative;
+  border: 6px solid black;
+  background-color: black;
+}
+
+.pos-titdet{
+  top: 36em;
+  position: relative;
+  @include respond-to($phone){
+    top: 28em;
+  }
+}
+.pos-info{
+  margin-left: 13em;
+  margin-top: 5em;
+  @include respond-to($phone){
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+  @include respond-to($tablet-landscape){
+    margin-left: 5em;
+    margin-top: 2em;
+  }
+}
+.mar-detph{
+  @include respond-to($phone){
+    margin-top: 13em;
+    border-top: 2px solid #5F5AA2;
+    padding-top: 1.5em;
+  }
+}
+
+.txt-det{
+  @include respond-to($phone){
+    font-size: 1.1em;
+  }
+  @include respond-to($tablet-landscape){
+    font-size: 1.3em;
+  }
+}
+.txt-cen{
+  margin-bottom: 1em;
+  @include respond-to($phone){
+    margin-top: 2em;
+    font-size: 1.8em;
+    text-align: center;
+  }
+  @include respond-to($tablet-landscape){
+    margin-top: 2em;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+// registro //
+label{
+  color: white;
+}
+.mar-reg{
+  margin-top: 7em;
+  margin-left: 15%;
+}
+.btn-bol{
+  margin-top: 0.8em;
+  color: #C99A0E;
+  border: 2px solid #C99A0E;
+  font-weight: 800;
+  padding: 0.5em;
+  @include respond-to($tablet-landscape){
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+} 
+.btn-bol:hover {
+  color: black;
+  background-color: #C99A0E;
+  border-color: #C99A0E;
+}
+
+//confirmación registro//
+.mar-confireg{
+  margin-top: 7em;
+  margin-left: 10em;
+  margin-right: 10em;
+  @include respond-to($phone){
+    margin-top: 6em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  @include respond-to($tablet-landscape){
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1.3em;
+  }
+}
+.btn-reg{
+  color: #BA1717;
+  border: 2px solid #BA1717;
+  font-weight: 800;
+  padding: 0.5em;
+  @include respond-to($tablet-landscape){
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+} 
+.btn-reg:hover {
+  color: #fff;
+  background-color: #BA1717;
+  border-color: #BA1717;
+}
+
+// confirmacion final-desgloce //
