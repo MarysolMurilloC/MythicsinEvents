@@ -435,6 +435,18 @@ label {
   margin-top: 7em;
   margin-left: 15%;
 }
+@media only screen and (max-width: 480px) {
+  .mar-reg {
+    margin-top: 4em;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mar-reg {
+    margin-right: 15%;
+  }
+}
 
 .btn-bol {
   margin-top: 0.8em;
@@ -454,6 +466,23 @@ label {
   color: black;
   background-color: #C99A0E;
   border-color: #C99A0E;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .line-reg {
+    border-top: #9996C5 solid;
+    border-width: 3px;
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .line-reg {
+    border-top: #9996C5 solid;
+    border-width: 3px;
+    margin-top: 4em;
+    padding-top: 3em;
+  }
 }
 
 .mar-confireg {

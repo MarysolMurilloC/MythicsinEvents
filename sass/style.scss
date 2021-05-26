@@ -343,6 +343,14 @@ label{
 .mar-reg{
   margin-top: 7em;
   margin-left: 15%;
+  @include respond-to($phone){
+    margin-top: 4em;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  @include respond-to($tablet-landscape){
+    margin-right: 15%;
+  }
 }
 .btn-bol{
   margin-top: 0.8em;
@@ -359,6 +367,20 @@ label{
   color: black;
   background-color: #C99A0E;
   border-color: #C99A0E;
+}
+.line-reg{
+  @include respond-to($tablet-landscape){
+    border-top: #9996C5 solid;
+    border-width: 3px;
+    margin-top: 1em;
+    padding-top: 3em;
+  }
+  @include respond-to($phone){
+    border-top: #9996C5 solid;
+    border-width: 3px;
+    margin-top: 4em;
+    padding-top: 3em;
+  }
 }
 
 //confirmación registro//
@@ -392,6 +414,7 @@ label{
   background-color: #BA1717;
   border-color: #BA1717;
 }
+
 
 // confirmacion final-desgloce //
 
