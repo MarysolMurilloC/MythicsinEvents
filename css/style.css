@@ -494,3 +494,8 @@ label {
   background-color: #BA1717;
   border-color: #BA1717;
 }
+
+.mar-fact {
+  margin-top: 7em;
+  text-align: center;
+}
